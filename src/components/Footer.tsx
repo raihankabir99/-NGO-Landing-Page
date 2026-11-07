@@ -145,7 +145,7 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom Copyright & Disclaimer Bar */}
         <div className="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} HopeBridge Foundation NGO Website Demo Showcase. Fictional frontend project.</p>
+          <p>© {new Date().getFullYear()} HopeBridge Foundation NGO Website Demo Showcase. Fictional frontend project. <span className="text-teal-400 font-semibold">Crafted by Raihan Kabir.</span></p>
           <div className="flex items-center gap-4">
             <span className="text-slate-500">All data shown is illustrative for design demonstration purposes.</span>
           </div>
