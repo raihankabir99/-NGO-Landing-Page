@@ -71,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </a>
 
           {/* Zone 2: 6 Clean single-line Navigation Links (Desktop) */}
-          <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm font-medium text-slate-600">
             {navLinks.map((link) => {
               const isActive = activeSection === link.id;
               return (
@@ -107,7 +107,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Mobile Hamburger Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+              className="lg:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -117,7 +117,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pt-4 border-t border-slate-200 pb-2 space-y-2 animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="lg:hidden mt-4 pt-4 border-t border-slate-200 pb-2 space-y-2 animate-in fade-in slide-in-from-top-2 duration-200">
             {navLinks.map((link) => (
               <a
                 key={link.id}
