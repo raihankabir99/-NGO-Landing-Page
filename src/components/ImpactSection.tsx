@@ -49,7 +49,7 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({
   };
 
   return (
-    <section id="impact" className="py-20 bg-slate-900 text-white border-b border-slate-800 relative overflow-hidden">
+    <section id="impact" className="py-12 sm:py-16 lg:py-20 bg-slate-900 text-white border-b border-slate-800 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {showAnnotations && (
           <div className="mb-6 p-3 rounded-lg bg-amber-500/20 border border-amber-500/40 text-amber-200 text-xs flex items-center gap-2">
