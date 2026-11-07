@@ -62,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-slate-900 group-hover:text-teal-600 transition-colors">
-                InAmigos
+                HopeBridge
               </span>
               <span className="text-[10px] font-semibold tracking-wider text-teal-600 uppercase -mt-1">
                 Foundation
@@ -144,7 +144,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 className="w-full bg-slate-900 text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2"
               >
                 <Heart className="w-4 h-4 text-teal-400" />
-                <span>Support InAmigos Foundation</span>
+                <span>Support HopeBridge Foundation</span>
                 <ArrowUpRight className="w-4 h-4" />
               </button>
             </div>

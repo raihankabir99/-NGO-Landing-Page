@@ -61,8 +61,8 @@ export const CampaignModal: React.FC<CampaignModalProps> = ({
               />
             </div>
             <div className="flex justify-between text-xs text-slate-600 pt-1 font-mono">
-              <span>Raised: <strong>₹{campaign.raisedAmount.toLocaleString('en-IN')}</strong></span>
-              <span>Goal: <strong>₹{campaign.targetAmount.toLocaleString('en-IN')}</strong></span>
+              <span>Raised: <strong>${campaign.raisedAmount.toLocaleString('en-US')}</strong></span>
+              <span>Goal: <strong>${campaign.targetAmount.toLocaleString('en-US')}</strong></span>
             </div>
           </div>
 
@@ -82,15 +82,15 @@ export const CampaignModal: React.FC<CampaignModalProps> = ({
               <Users className="w-4 h-4 text-teal-600 shrink-0" />
               <div>
                 <span className="font-bold text-slate-900 block">{campaign.donorsCount} Donors</span>
-                <span className="text-[10px] text-slate-500">Active supporters</span>
+                <span className="text-[10px] text-slate-500">Sample donors count</span>
               </div>
             </div>
 
             <div className="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100 flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
               <div>
-                <span className="font-bold text-slate-900 block">80G Tax Deductible</span>
-                <span className="text-[10px] text-slate-500">Instant certificate</span>
+                <span className="font-bold text-slate-900 block">Sample Goal Model</span>
+                <span className="text-[10px] text-slate-500">Illustrative campaign data</span>
               </div>
             </div>
           </div>

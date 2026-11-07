@@ -35,7 +35,7 @@ export const ShowcaseHeader: React.FC<ShowcaseHeaderProps> = ({
             Internship Showcase Project
           </span>
           <span className="hidden sm:inline font-medium text-slate-300">
-            InAmigos Foundation – NGO Website Feature Concept
+            HopeBridge Foundation – NGO Website Feature Concept
           </span>
         </div>
 

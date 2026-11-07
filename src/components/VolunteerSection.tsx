@@ -14,7 +14,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
     email: '',
     phone: '',
     location: '',
-    areaOfInterest: 'Teaching & Mentorship',
+    areaOfInterest: 'Teaching & Child Mentorship',
     availability: 'Weekends'
   });
 
@@ -53,7 +53,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validate()) {
-      const generatedId = 'IN-VOL-' + Math.floor(100000 + Math.random() * 900000);
+      const generatedId = 'HB-VOL-' + Math.floor(100000 + Math.random() * 900000);
       setVolunteerBadgeId(generatedId);
       setIsSubmitted(true);
     }
@@ -66,7 +66,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
       email: '',
       phone: '',
       location: '',
-      areaOfInterest: 'Teaching & Mentorship',
+      areaOfInterest: 'Teaching & Child Mentorship',
       availability: 'Weekends'
     });
     setErrors({});
@@ -79,14 +79,14 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
           <div className="mb-6 p-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
             <span>
-              <strong>UX Rationale (Feature 2 - Volunteer):</strong> Clear field validations and instant generation of a personalized Volunteer Pass preview provides immediate psychological reward, increasing conversion.
+              <strong>UX Rationale (Feature 2 - Volunteer Demo):</strong> Clear field validations and instant generation of a personalized Volunteer Pass preview provides immediate feedback in this interactive demo.
             </span>
           </div>
         )}
 
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs font-bold tracking-widest text-teal-600 uppercase">
-            Feature 2: Volunteer Registration
+            Feature 2: Volunteer Registration (Demo)
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Be the Reason Someone Smiles
@@ -104,10 +104,10 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                 <div className="flex items-center justify-between pb-3 border-b border-slate-200">
                   <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
                     <UserCheck className="w-5 h-5 text-teal-600" />
-                    <span>Volunteer Application Form</span>
+                    <span>Volunteer Application Form (Demo)</span>
                   </h3>
                   <span className="text-xs font-semibold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full">
-                    Open Enrollment
+                    Demo Open Enrollment
                   </span>
                 </div>
 
@@ -118,7 +118,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                   </label>
                   <input
                     type="text"
-                    placeholder="e.g. Ananya Sharma"
+                    placeholder="e.g. Sophia Bennett"
                     value={formData.fullName}
                     onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                     className={`w-full px-4 py-3 rounded-xl border text-sm font-medium transition-colors focus:outline-none focus:ring-2 ${
@@ -140,7 +140,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                     </label>
                     <input
                       type="email"
-                      placeholder="ananya@example.com"
+                      placeholder="sophia@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className={`w-full px-4 py-3 rounded-xl border text-sm font-medium transition-colors focus:outline-none focus:ring-2 ${
@@ -160,7 +160,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                     </label>
                     <input
                       type="tel"
-                      placeholder="+91 98765 43210"
+                      placeholder="+1 202-555-0147"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className={`w-full px-4 py-3 rounded-xl border text-sm font-medium transition-colors focus:outline-none focus:ring-2 ${
@@ -182,7 +182,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                   </label>
                   <input
                     type="text"
-                    placeholder="e.g. Bangalore, Karnataka"
+                    placeholder="e.g. New York, NY"
                     value={formData.location}
                     onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                     className={`w-full px-4 py-3 rounded-xl border text-sm font-medium transition-colors focus:outline-none focus:ring-2 ${
@@ -235,7 +235,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                   className="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 text-base active:scale-98"
                 >
                   <UserCheck className="w-5 h-5 text-teal-400" />
-                  <span>Submit Volunteer Application</span>
+                  <span>Submit Demo Application</span>
                 </button>
               </form>
             ) : (
@@ -247,13 +247,13 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
 
                 <div className="space-y-2">
                   <span className="text-xs font-bold text-teal-600 uppercase tracking-wider">
-                    Application Received!
+                    Demo Submission Received
                   </span>
                   <h3 className="text-2xl font-bold text-slate-900">
-                    Welcome to InAmigos, {formData.fullName}!
+                    Welcome to HopeBridge, {formData.fullName}!
                   </h3>
                   <p className="text-sm text-slate-600 max-w-md mx-auto">
-                    Thank you for stepping forward to make a difference. Our volunteer coordinator will review your profile and contact you within 24 hours.
+                    Thank you for testing our volunteer portal demo. Please note that application information is stored temporarily in this demo session and is not sent to any server.
                   </p>
                 </div>
 
@@ -265,12 +265,12 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                         <Award className="w-4 h-4" />
                       </div>
                       <div>
-                        <p className="text-xs font-bold text-white uppercase tracking-wider">InAmigos Volunteer Pass</p>
-                        <p className="text-[10px] text-teal-400 font-mono">ID: {volunteerBadgeId}</p>
+                        <p className="text-xs font-bold text-white uppercase tracking-wider">Demo Volunteer Pass Preview</p>
+                        <p className="text-[10px] text-teal-400 font-mono">Ref ID: {volunteerBadgeId}</p>
                       </div>
                     </div>
                     <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30 font-semibold">
-                      VERIFIED APPLICANT
+                      DEMO APPLICANT PREVIEW
                     </span>
                   </div>
 
@@ -298,7 +298,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                   onClick={handleReset}
                   className="text-xs font-semibold text-teal-600 hover:text-teal-700 underline"
                 >
-                  Submit another application
+                  Test another application
                 </button>
               </div>
             )}
@@ -310,7 +310,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
               <div className="aspect-[4/3] relative">
                 <img
                   src={VOLUNTEER_IMAGE}
-                  alt="InAmigos Volunteer Team smiling outdoors"
+                  alt="HopeBridge Volunteer Team smiling outdoors"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -320,7 +320,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                     Community Spirit
                   </span>
                   <p className="text-sm font-bold">
-                    "Join hands with 1,200+ changemakers nationwide."
+                    "Join hands with 1,200+ community volunteers."
                   </p>
                 </div>
               </div>
@@ -329,16 +329,16 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
             {/* Volunteer Benefits */}
             <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-4">
               <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider">
-                Why Volunteer with InAmigos?
+                Why Volunteer with HopeBridge?
               </h4>
               <ul className="space-y-3 text-xs text-slate-700 font-medium">
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
-                  <span>Receive an official <strong>Verified Certificate of Service</strong> for career & higher education.</span>
+                  <span>Receive a sample <strong>Certificate of Service</strong> for career & community recognition.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
-                  <span>Flexible commitments: Weekend drives on-ground or online mentoring.</span>
+                  <span>Flexible commitments: Weekend community drives or online mentoring.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />

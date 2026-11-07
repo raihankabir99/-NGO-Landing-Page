@@ -16,8 +16,8 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
   onProcessDonation,
   showAnnotations = false
 }) => {
-  const presetAmounts = [50, 100, 500, 1000];
-  const [selectedAmount, setSelectedAmount] = useState<number>(500);
+  const presetAmounts = [10, 25, 50, 100];
+  const [selectedAmount, setSelectedAmount] = useState<number>(50);
   const [customAmount, setCustomAmount] = useState<string>('');
   const [isCustom, setIsCustom] = useState<boolean>(false);
   const [frequency, setFrequency] = useState<'Monthly' | 'One-time'>('Monthly');
@@ -46,9 +46,9 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
     if (!val) {
       setInputError('Please enter an amount');
     } else if (isNaN(num) || num <= 0) {
-      setInputError('Enter a valid amount (Min ₹10)');
-    } else if (num < 10) {
-      setInputError('Minimum donation amount is ₹10');
+      setInputError('Enter a valid amount (Min $1)');
+    } else if (num < 1) {
+      setInputError('Minimum donation amount is $1');
     } else {
       setInputError('');
       setSelectedAmount(num);
@@ -61,32 +61,32 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
     if (amt <= 0) return 'Select or enter an amount to see the tangible community impact.';
     
     if (cat === 'education') {
-      if (amt < 100) return `Provides 2 specialized study workbooks and notebooks for a primary student.`;
-      if (amt < 300) return `Supplies a full school bag with textbooks, geometry box & stationary kit.`;
-      if (amt < 800) return `Funds 1 month of evening remedial coaching & mentorship for an underprivileged student.`;
-      return `Sponsors 2 students for an entire school term including books, uniform & digital tuition.`;
+      if (amt < 25) return `Provides 2 specialized study workbooks and notebooks for a primary student.`;
+      if (amt < 50) return `Supplies a full school bag with textbooks, geometry box & stationery kit.`;
+      if (amt < 100) return `Funds 1 month of after-school remedial coaching & mentorship for an underprivileged student.`;
+      return `Sponsors 2 students for an entire school term including books, uniform & digital tutoring.`;
     } else if (cat === 'food') {
-      if (amt < 100) return `Provides 2 wholesome hot cooked meals for a child.`;
-      if (amt < 300) return `Feeds a family of four for 3 days with fresh grain and legume kits.`;
-      if (amt < 800) return `Provides 2 weeks of balanced daily lunches and fruit to a senior citizen.`;
-      return `Supplies a comprehensive monthly ration hamper (rice, wheat, lentils, oil) for a family.`;
+      if (amt < 25) return `Provides 5 wholesome hot cooked meals for children.`;
+      if (amt < 50) return `Feeds a family of four for 3 days with fresh grain and produce kits.`;
+      if (amt < 100) return `Provides 2 weeks of balanced daily lunches and fruit for senior citizens.`;
+      return `Supplies a comprehensive monthly grocery hamper for a vulnerable family.`;
     } else if (cat === 'health') {
-      if (amt < 100) return `Provides 1 personal hygiene & sanitation kit (soaps, masks, dental care).`;
-      if (amt < 300) return `Covers blood tests and pediatric diagnostic checkup for a child.`;
-      if (amt < 800) return `Funds prescription medicines & vision glasses for 2 elderly community members.`;
-      return `Sponsors a full medical screening camp with doctor consultations & free medications.`;
+      if (amt < 25) return `Provides 2 personal hygiene & sanitation kits (soaps, masks, dental care).`;
+      if (amt < 50) return `Covers health screening and pediatric diagnostic checkup for a child.`;
+      if (amt < 100) return `Funds prescription supplies & vision glasses for 2 elderly community members.`;
+      return `Sponsors a mobile health screening clinic with doctor consultations & wellness supplies.`;
     } else {
-      if (amt < 100) return `Provides emergency clean drinking water and oral hydration supplies.`;
-      if (amt < 300) return `Distributes warm blankets and emergency shelter tarpaulins.`;
-      if (amt < 800) return `Funds emergency disaster relief kit for a displaced household.`;
+      if (amt < 25) return `Provides emergency clean drinking water and hydration packs.`;
+      if (amt < 50) return `Distributes warm blankets and emergency shelter supplies.`;
+      if (amt < 100) return `Funds emergency disaster relief kit for a displaced household.`;
       return `Provides comprehensive community emergency recovery support package.`;
     }
   };
 
   const handleDonateSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (activeAmount < 10) {
-      setInputError('Minimum donation amount is ₹10');
+    if (activeAmount < 1) {
+      setInputError('Minimum donation amount is $1');
       return;
     }
 
@@ -108,14 +108,14 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
           <div className="mb-6 p-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
             <span>
-              <strong>UX Rationale (Feature 1 - Donation):</strong> Interactive preset cards combined with custom input and instant tangible impact feedback dramatically increases donor conversion by showing *exactly* what every Rupee accomplishes.
+              <strong>UX Rationale (Feature 1 - Donation Demo):</strong> Preset cards combined with custom input and instant impact calculations improve engagement in this interactive demo flow.
             </span>
           </div>
         )}
 
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs font-bold tracking-widest text-teal-600 uppercase">
-            Feature 1: Interactive Donation Portal
+            Feature 1: Interactive Donation Portal (Demo)
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Your Small Contribution Can Change a Life
@@ -144,7 +144,7 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
                   }`}
                 >
                   <Sparkles className="w-3.5 h-3.5" />
-                  <span>Give Monthly (Recommended)</span>
+                  <span>Give Monthly</span>
                 </button>
                 <button
                   type="button"
@@ -188,7 +188,7 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
             {/* Preset Amount Cards */}
             <div>
               <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
-                Select Amount (INR ₹)
+                Select Amount (USD $)
               </label>
               <div className="grid grid-cols-4 gap-2.5">
                 {presetAmounts.map((amt) => {
@@ -204,7 +204,7 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
                           : 'border-slate-200 hover:border-slate-300 bg-slate-50 text-slate-800 font-semibold'
                       }`}
                     >
-                      <span className="text-base sm:text-lg">₹{amt}</span>
+                      <span className="text-base sm:text-lg">${amt}</span>
                     </button>
                   );
                 })}
@@ -218,13 +218,13 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
               </label>
               <div className="relative rounded-xl shadow-sm">
                 <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500 font-bold">
-                  ₹
+                  $
                 </div>
                 <input
                   type="number"
-                  min="10"
-                  step="10"
-                  placeholder="Enter custom amount (e.g. 2500)"
+                  min="1"
+                  step="5"
+                  placeholder="Enter custom amount (e.g. 150)"
                   value={customAmount}
                   onChange={handleCustomChange}
                   className={`block w-full pl-8 pr-4 py-3 rounded-xl border text-sm font-semibold transition-colors focus:outline-none focus:ring-2 ${
@@ -247,21 +247,21 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
             {/* Submit Action Button */}
             <button
               type="submit"
-              disabled={activeAmount < 10 || !!inputError}
+              disabled={activeAmount < 1 || !!inputError}
               className="w-full bg-teal-600 hover:bg-teal-700 disabled:opacity-50 text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-teal-600/20 hover:shadow-teal-600/30 transition-all flex items-center justify-center gap-2 text-base active:scale-98"
             >
               <Heart className="w-5 h-5 fill-white text-white" />
-              <span>Donate ₹{activeAmount > 0 ? activeAmount.toLocaleString('en-IN') : '0'} {frequency === 'Monthly' ? '/ Month' : 'Now'}</span>
+              <span>Donate ${activeAmount > 0 ? activeAmount.toLocaleString('en-US') : '0'} {frequency === 'Monthly' ? '/ Month' : 'Now'}</span>
               <ArrowRight className="w-4 h-4 ml-1" />
             </button>
 
-            {/* Tax Benefit & Demo Note */}
+            {/* Demo Disclaimer Note */}
             <div className="flex items-center justify-between text-[11px] text-slate-500 pt-1 border-t border-slate-100">
-              <span className="flex items-center gap-1 text-emerald-700 font-medium">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                80G Tax Exemption Certificate Included
+              <span className="flex items-center gap-1 text-teal-700 font-medium">
+                <ShieldCheck className="w-3.5 h-3.5 text-teal-600" />
+                Interactive Demo Portal
               </span>
-              <span className="text-slate-400">Interactive Demo Flow</span>
+              <span className="text-slate-400">No Real Payment Processed</span>
             </div>
           </form>
 
@@ -270,17 +270,17 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
             <div className="space-y-6 relative z-10">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-wider text-teal-400">
-                  Direct Impact Calculator
+                  Sample Impact Calculator
                 </span>
                 <span className="bg-teal-500/20 text-teal-300 text-[10px] font-semibold px-2 py-0.5 rounded border border-teal-500/30">
-                  Live Preview
+                  Demo Preview
                 </span>
               </div>
 
               <div>
                 <p className="text-slate-400 text-xs">Your Selected Gift:</p>
                 <p className="text-3xl sm:text-4xl font-extrabold text-white font-mono tabular-nums mt-1">
-                  ₹{activeAmount > 0 ? activeAmount.toLocaleString('en-IN') : '0'}
+                  ${activeAmount > 0 ? activeAmount.toLocaleString('en-US') : '0'}
                   <span className="text-sm font-normal text-slate-400 ml-1.5">
                     {frequency === 'Monthly' ? '/ month' : 'one-time'}
                   </span>
@@ -291,16 +291,16 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
               <div className="bg-slate-800/90 rounded-2xl p-4 border border-slate-700 space-y-2">
                 <div className="flex items-center gap-2 text-xs font-semibold text-teal-400">
                   <Sparkles className="w-4 h-4 text-teal-400" />
-                  <span>What your ₹{activeAmount} creates:</span>
+                  <span>What your ${activeAmount} creates:</span>
                 </div>
                 <p className="text-sm text-slate-200 font-medium leading-relaxed">
                   "{getImpactDescription(activeAmount, category)}"
                 </p>
               </div>
 
-              {/* Transparent Allocation Breakdown */}
+              {/* Allocation Breakdown */}
               <div className="space-y-2 text-xs">
-                <p className="font-semibold text-slate-300 uppercase tracking-wider text-[10px]">Fund Distribution Guarantee</p>
+                <p className="font-semibold text-slate-300 uppercase tracking-wider text-[10px]">Illustrative Allocation Model</p>
                 <div className="space-y-1.5">
                   <div className="flex justify-between text-slate-400">
                     <span>Direct Program Delivery</span>
@@ -310,7 +310,7 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
                     <div className="bg-teal-400 h-full w-[88%]" />
                   </div>
                   <div className="flex justify-between text-[11px] text-slate-400">
-                    <span>Field Coordination (7%)</span>
+                    <span>Field Logistics (7%)</span>
                     <span>Admin & Operations (5%)</span>
                   </div>
                 </div>
@@ -320,7 +320,7 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
             {/* Security Badge Footer */}
             <div className="mt-8 pt-4 border-t border-slate-800 text-[11px] text-slate-400 flex items-center gap-2 relative z-10">
               <ShieldCheck className="w-4 h-4 text-teal-400 shrink-0" />
-              <span>Instant receipt generated with official 80G tax receipt number upon confirmation.</span>
+              <span>Interactive demo summary generated upon completion (no financial transactions occur).</span>
             </div>
           </div>
         </div>

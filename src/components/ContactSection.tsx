@@ -52,20 +52,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           <div className="mb-6 p-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
             <span>
-              <strong>UX Rationale (Feature 6 - Contact & FAQ):</strong> Pair direct contact channels with an expandable FAQ accordion to answer common donor & volunteer questions instantly, reducing administrative friction.
+              <strong>UX Rationale (Feature 6 - Contact & FAQ Demo):</strong> Pair direct contact channels with an expandable FAQ accordion to answer common questions in a clean frontend demo.
             </span>
           </div>
         )}
 
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs font-bold tracking-widest text-teal-600 uppercase">
-            Feature 6: Contact, Support & FAQ
+            Feature 6: Contact, Support & FAQ (Demo)
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Let's Make a Difference Together
           </h2>
           <p className="text-base text-slate-600">
-            Have questions about donations, volunteering, or corporate CSR partnerships? We are here to help.
+            Have questions about sample donations, volunteering, or corporate partnerships? Explore our demo contact interface.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
                 <div>
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Email Inquiry</p>
-                  <p className="text-xs font-bold text-slate-900 mt-0.5 break-all">contact@inamigos-demo.org</p>
+                  <p className="text-xs font-bold text-slate-900 mt-0.5 break-all">hello@hopebridge.example</p>
                 </div>
               </div>
 
@@ -89,8 +89,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Helpline</p>
-                  <p className="text-xs font-bold text-slate-900 mt-0.5">+91 98765 43210</p>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Phone</p>
+                  <p className="text-xs font-bold text-slate-900 mt-0.5">+1 202-555-0147</p>
                 </div>
               </div>
 
@@ -99,8 +99,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Field Hubs</p>
-                  <p className="text-xs font-bold text-slate-900 mt-0.5">Bangalore & Pune, India</p>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Office Address</p>
+                  <p className="text-xs font-bold text-slate-900 mt-0.5">120 Green Avenue, New York, USA</p>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-lg">
               <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
                 <Send className="w-5 h-5 text-teal-600" />
-                <span>Send Us a Direct Message</span>
+                <span>Send Us a Demo Message</span>
               </h3>
 
               {!isSent ? (
@@ -121,7 +121,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       </label>
                       <input
                         type="text"
-                        placeholder="e.g. Rahul Verma"
+                        placeholder="e.g. Daniel Morgan"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className={`w-full px-4 py-3 rounded-xl border text-sm font-medium focus:outline-none focus:ring-2 ${
@@ -137,7 +137,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       </label>
                       <input
                         type="email"
-                        placeholder="rahul@example.com"
+                        placeholder="daniel@example.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className={`w-full px-4 py-3 rounded-xl border text-sm font-medium focus:outline-none focus:ring-2 ${
@@ -158,9 +158,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm font-medium focus:outline-none focus:ring-2 focus:ring-teal-500"
                     >
                       <option value="General Inquiry">General Inquiry</option>
-                      <option value="Donation & 80G Receipt">Donation & 80G Receipt Support</option>
+                      <option value="Donation & Receipt Support">Donation & Receipt Support</option>
                       <option value="Volunteer Programs">Volunteer Opportunities</option>
-                      <option value="Corporate CSR Partnership">Corporate CSR Partnership</option>
+                      <option value="Corporate Partnership">Corporate Partnership</option>
                     </select>
                   </div>
 
@@ -185,7 +185,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
                   >
                     <Send className="w-4 h-4" />
-                    <span>Send Message</span>
+                    <span>Send Demo Message</span>
                   </button>
                 </form>
               ) : (
@@ -193,9 +193,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <div className="w-14 h-14 bg-teal-100 text-teal-600 rounded-2xl flex items-center justify-center mx-auto">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h4 className="text-xl font-bold text-slate-900">Message Sent Successfully!</h4>
+                  <h4 className="text-xl font-bold text-slate-900">Demo Message Preview</h4>
                   <p className="text-sm text-slate-600 max-w-sm mx-auto">
-                    Thank you for reaching out to InAmigos Foundation. A team member will respond to <strong>{formData.email}</strong> within 24 hours.
+                    Thank you for testing the contact form. This is a frontend demonstration — no email was sent and no reply will be sent.
                   </p>
                   <button
                     onClick={() => {
@@ -204,7 +204,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     }}
                     className="text-xs font-semibold text-teal-600 hover:text-teal-700 underline"
                   >
-                    Send another message
+                    Send another demo message
                   </button>
                 </div>
               )}
@@ -213,16 +213,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             {/* Social Media Links Strip */}
             <div className="bg-slate-900 text-white p-6 rounded-2xl flex flex-wrap items-center justify-between gap-4">
               <div>
-                <p className="text-xs font-bold uppercase tracking-wider text-teal-400">Follow Our Grassroots Work</p>
-                <p className="text-xs text-slate-300 mt-0.5">Stay updated with daily field drive photos & stories.</p>
+                <p className="text-xs font-bold uppercase tracking-wider text-teal-400">Social Media Links (Demo)</p>
+                <p className="text-xs text-slate-300 mt-0.5">Non-interactive sample social profile indicators.</p>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 flex-wrap">
                 {['Twitter', 'Instagram', 'LinkedIn', 'YouTube', 'Facebook'].map((net, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1.5 rounded-lg bg-slate-800 text-xs font-semibold text-slate-200 border border-slate-700 hover:border-teal-400 hover:text-teal-400 transition-colors cursor-pointer"
+                    className="px-2.5 py-1.5 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700 select-none cursor-default"
                   >
-                    {net}
+                    {net} <span className="text-[10px] text-slate-500">(Demo)</span>
                   </span>
                 ))}
               </div>
@@ -269,7 +269,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             </div>
 
             <p className="text-[11px] text-slate-400 italic">
-              * Official contact details presented above are illustrative placeholders designed for the InAmigos Foundation internship project submission.
+              * Contact information and forms presented above are illustrative demo placeholders for the HopeBridge Foundation frontend project.
             </p>
           </div>
         </div>

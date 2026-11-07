@@ -19,7 +19,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute inset-0 z-0">
         <img
           src={HERO_IMAGE}
-          alt="Smiling school children empowered by InAmigos Foundation"
+          alt="Smiling school children empowered by HopeBridge Foundation"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105"
         />
@@ -43,9 +43,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Trust badge kicker - clean text with separator */}
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-teal-400 bg-teal-950/60 border border-teal-500/30 px-3.5 py-1.5 rounded-lg backdrop-blur-sm">
               <ShieldCheck className="w-4 h-4 text-teal-400" />
-              <span>Registered Non-Profit NGO Initiative</span>
+              <span>Non-Profit NGO Showcase Demo</span>
               <span className="text-teal-600">·</span>
-              <span>Section 80G Certified</span>
+              <span>Illustrative Concept</span>
             </div>
 
             {/* Main Headline */}
@@ -55,7 +55,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Supporting paragraph */}
             <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl">
-              Empowering communities, supporting children and creating opportunities through compassion and collective action. Join InAmigos Foundation in bringing light, learning, and food to families in need.
+              Empowering communities, supporting children and creating opportunities through compassion and collective action. Join HopeBridge Foundation in bringing light, learning, and food to families in need.
             </p>
 
             {/* Action Buttons */}
@@ -90,7 +90,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
               <div>
                 <p className="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono tabular-nums">100%</p>
-                <p className="text-xs text-slate-400 mt-0.5">Direct Impact</p>
+                <p className="text-xs text-slate-400 mt-0.5 font-sans">Sample Demo Impact</p>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
                 <img
                   src={HERO_IMAGE}
-                  alt="InAmigos children classroom learning"
+                  alt="HopeBridge children classroom learning"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -111,7 +111,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <div className="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-700/80 text-left space-y-1.5">
                   <div className="flex items-center justify-between text-xs">
                     <span className="font-bold text-teal-400 uppercase tracking-wider">Active Spotlight</span>
-                    <span className="text-slate-400 text-[11px]">Rural Learning Hubs</span>
+                    <span className="text-slate-400 text-[11px]">Community Learning Hubs</span>
                   </div>
                   <h3 className="text-sm font-semibold text-white">
                     "Every child deserves books, mentors & hope."
@@ -120,8 +120,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     <div className="bg-gradient-to-r from-teal-500 to-emerald-400 h-full w-[77%]" />
                   </div>
                   <div className="flex justify-between text-[11px] text-slate-400 pt-0.5">
-                    <span>₹385,000 Raised</span>
-                    <span className="font-semibold text-teal-300">77% of ₹500,000 Goal</span>
+                    <span>$38,500 Raised</span>
+                    <span className="font-semibold text-teal-300">77% of $50,000 Goal</span>
                   </div>
                 </div>
               </div>

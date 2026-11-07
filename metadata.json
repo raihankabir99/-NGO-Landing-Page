@@ -1,6 +1,6 @@
 {
-  "name": "InAmigos Foundation Showcase",
-  "description": "A modern NGO website showcase for InAmigos Foundation featuring interactive donations, volunteer registration, impact stats, campaigns, testimonials, and contact features.",
+  "name": "HopeBridge Foundation Showcase",
+  "description": "A modern NGO website showcase for HopeBridge Foundation featuring interactive demo donations, volunteer registration, impact stats, campaigns, testimonials, and contact features.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

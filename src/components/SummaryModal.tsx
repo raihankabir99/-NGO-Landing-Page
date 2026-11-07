@@ -17,12 +17,12 @@ export const SummaryModal: React.FC<SummaryModalProps> = ({ isOpen, onClose }) =
   };
 
   const featureChecklist = [
-    { title: '1. Donation Section', detail: 'Preset ₹ cards (₹50, ₹100, ₹500, ₹1000), custom input, frequency toggle, cause selector, live impact description & printable 80G receipt.' },
-    { title: '2. Volunteer Registration', detail: 'Full name, email, phone, location, area of interest, availability form with live validation and interactive Volunteer Pass generator.' },
+    { title: '1. Donation Section', detail: 'Preset $ cards ($10, $25, $50, $100), custom input, frequency toggle, cause selector, live impact calculation & printable demo summary.' },
+    { title: '2. Volunteer Registration', detail: 'Full name, email, phone, location, area of interest, availability form with live validation and interactive Volunteer Pass preview generator.' },
     { title: '3. Impact Showcase', detail: 'Statistic cards (Children, Schools, Meals, Volunteers) with clear illustrative sample tags and tabbed program pillar deep dive.' },
     { title: '4. Campaigns & Events', detail: '4 interactive campaign cards with goal progress bars, donor counters, category filters, Learn More modal & Support CTA.' },
-    { title: '5. Testimonials', detail: '3 stories representing Beneficiary, Volunteer, and Corporate Supporter personas with quote, role, and location.' },
-    { title: '6. Contact & Support', detail: 'Validated contact form, email/phone/address placeholders, social links, and 5-item expandable FAQ accordion.' },
+    { title: '5. Testimonials', detail: '3 stories representing Beneficiary (James Wilson), Volunteer (Sophia Bennett), and Supporter (Daniel Morgan) personas with quote, role, and location.' },
+    { title: '6. Contact & Support', detail: 'Validated contact form with demo preview notices, email/phone/address placeholders, social links, and 5-item expandable FAQ accordion.' },
   ];
 
   return (
@@ -35,8 +35,8 @@ export const SummaryModal: React.FC<SummaryModalProps> = ({ isOpen, onClose }) =
               <Award className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="text-sm font-bold text-white">Internship Submission Summary</h3>
-              <p className="text-[10px] text-teal-400 font-mono">InAmigos Foundation Showcase Project</p>
+              <h3 className="text-sm font-bold text-white">Project Showcase Summary</h3>
+              <p className="text-[10px] text-teal-400 font-mono">HopeBridge Foundation Showcase Project</p>
             </div>
           </div>
           <button
@@ -56,7 +56,7 @@ export const SummaryModal: React.FC<SummaryModalProps> = ({ isOpen, onClose }) =
               <span>Project Executive Summary</span>
             </h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              This concept showcase demonstrates how a modern, responsive NGO web interface can elevate brand trust, boost donor conversions, and streamline volunteer recruitment for <strong>InAmigos Foundation</strong>.
+              This concept showcase demonstrates how a modern, responsive NGO web interface can elevate brand trust, boost donor conversions, and streamline volunteer recruitment for <strong>HopeBridge Foundation</strong>.
             </p>
           </div>
 

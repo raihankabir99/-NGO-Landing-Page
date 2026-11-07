@@ -140,11 +140,11 @@ export const CampaignsSection: React.FC<CampaignsSectionProps> = ({
 
                       <div className="flex justify-between items-center text-xs pt-1">
                         <div>
-                          <span className="font-bold text-slate-900 font-mono">₹{campaign.raisedAmount.toLocaleString('en-IN')}</span>
+                          <span className="font-bold text-slate-900 font-mono">${campaign.raisedAmount.toLocaleString('en-US')}</span>
                           <span className="text-slate-400 text-[10px] block">Raised</span>
                         </div>
                         <div className="text-right">
-                          <span className="font-semibold text-slate-600 font-mono">₹{campaign.targetAmount.toLocaleString('en-IN')}</span>
+                          <span className="font-semibold text-slate-600 font-mono">${campaign.targetAmount.toLocaleString('en-US')}</span>
                           <span className="text-slate-400 text-[10px] block">Goal</span>
                         </div>
                       </div>
@@ -159,7 +159,7 @@ export const CampaignsSection: React.FC<CampaignsSectionProps> = ({
                       <Users className="w-3.5 h-3.5 text-teal-600" />
                       <strong>{campaign.donorsCount}</strong> Donors
                     </span>
-                    <span className="text-slate-400">Verified Drive</span>
+                    <span className="text-slate-400">Sample Drive Data</span>
                   </div>
 
                   <div className="grid grid-cols-2 gap-2">

@@ -177,11 +177,11 @@ export const ImpactSection: React.FC<ImpactSectionProps> = ({
 
             <div className="lg:col-span-4 bg-slate-900 rounded-2xl p-6 border border-slate-700 text-center space-y-3">
               <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">
-                Transparency Standard
+                Demo Metric Standard
               </p>
-              <p className="text-2xl font-bold text-teal-300">Quarterly Audit</p>
+              <p className="text-2xl font-bold text-teal-300">Illustrative Data</p>
               <p className="text-xs text-slate-300">
-                All field expenditures and beneficiary registrations are verified before public release.
+                All statistics, donation totals, donor counts, and impact figures are sample data presented for design review.
               </p>
             </div>
           </div>

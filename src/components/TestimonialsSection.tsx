@@ -69,9 +69,14 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
               <div className="space-y-4">
                 {/* Quote Header */}
                 <div className="flex items-center justify-between">
-                  <span className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full text-white ${item.avatarBg}`}>
-                    {item.role} Story
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full text-white ${item.avatarBg}`}>
+                      {item.role} Story
+                    </span>
+                    <span className="text-[10px] bg-slate-200 text-slate-700 font-semibold px-2 py-0.5 rounded border border-slate-300">
+                      Illustrative Demo Testimonial
+                    </span>
+                  </div>
                   <Quote className="w-8 h-8 text-slate-300 group-hover:text-teal-500/40 transition-colors" />
                 </div>
 
@@ -109,7 +114,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 
         {/* Disclaimer Note */}
         <p className="mt-8 text-center text-xs text-slate-400 italic">
-          * Note: Testimonials presented above are representative sample stories created for the InAmigos Foundation project showcase.
+          * Note: All stories and profiles above are fictional sample testimonials created for the HopeBridge Foundation design showcase.
         </p>
       </div>
     </section>

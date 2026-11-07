@@ -51,13 +51,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
 
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs font-bold tracking-widest text-teal-600 uppercase">
-            About InAmigos Foundation
+            About HopeBridge Foundation
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Driven by Compassion, Grounded in Community Impact
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            InAmigos Foundation is a youth-driven non-profit organization dedicated to empowering underprivileged children and families. We believe that small, collective acts of generosity create lasting social change.
+            HopeBridge Foundation is a non-profit organization concept dedicated to empowering underprivileged children and families. We believe that small, collective acts of generosity create lasting social change.
           </p>
         </div>
 
@@ -94,10 +94,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         <div className="mt-12 bg-slate-900 text-white rounded-2xl p-8 lg:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-left max-w-2xl">
             <h3 className="text-xl sm:text-2xl font-bold text-white">
-              Transparent, Direct & Accountable Nonprofit Governance
+              Transparent & User-Centered NGO Platform Showcase
             </h3>
             <p className="text-sm text-slate-300">
-              100% of public donations are tracked with regular field impact updates. All contributions are eligible for 80G tax deductions with instant receipt certificates.
+              This interactive platform demonstrates seamless donation calculations, volunteer registrations, and campaign goal tracking in a clean, production-grade frontend preview.
             </p>
           </div>
           <button

@@ -48,8 +48,8 @@ export default function App() {
       amount: data.amount,
       frequency: data.frequency,
       category: data.category,
-      transactionId: 'IN-DON-2026-' + Math.floor(100000 + Math.random() * 900000),
-      date: new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' }),
+      transactionId: 'DEMO-REF-2026-' + Math.floor(100000 + Math.random() * 900000),
+      date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
       impactDescription: data.impactDescription
     };
 
