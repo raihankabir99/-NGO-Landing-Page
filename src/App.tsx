@@ -77,40 +77,40 @@ export default function App() {
         {/* About Us Section */}
         <AboutSection
           onLearnMoreClick={() => scrollToSection('impact')}
-          showAnnotations={showAnnotations}
+          showAnnotations={false}
         />
 
         {/* Feature 1: Donation Portal */}
         <DonationSection
           onProcessDonation={handleProcessDonation}
-          showAnnotations={showAnnotations}
+          showAnnotations={false}
         />
 
         {/* Feature 2: Volunteer Registration */}
         <VolunteerSection
-          showAnnotations={showAnnotations}
+          showAnnotations={false}
         />
 
         {/* Feature 3: Impact Showcase */}
         <ImpactSection
-          showAnnotations={showAnnotations}
+          showAnnotations={false}
         />
 
         {/* Feature 4: Campaigns & Events */}
         <CampaignsSection
           onSelectCampaign={(c) => setSelectedCampaign(c)}
           onDonateCampaign={handleSupportCampaign}
-          showAnnotations={showAnnotations}
+          showAnnotations={false}
         />
 
         {/* Feature 5: Testimonials */}
         <TestimonialsSection
-          showAnnotations={showAnnotations}
+          showAnnotations={false}
         />
 
         {/* Feature 6: Contact, Support & FAQ */}
         <ContactSection
-          showAnnotations={showAnnotations}
+          showAnnotations={false}
         />
       </main>
 
