@@ -1,78 +1,138 @@
-# HopeBridge Foundation — NGO Website Demo Showcase
+<!-- HopeBridge Foundation | Project README -->
 
-A modern, responsive React + TypeScript + Vite frontend demonstration created for **HopeBridge Foundation**. This showcase highlights six essential digital features designed to improve donor engagement, volunteer recruitment, impact visibility, and community outreach.
+<div align="center">
 
-> **IMPORTANT DISCLAIMER**: This application is a **fictional frontend design demonstration**. It does not represent an active operational non-profit organization, payment processing platform, or live donation system. No real payments are processed, no financial transactions take place, no tax receipts are issued, and no data is transmitted to an external server.
+# 🌿 HopeBridge Foundation
 
----
+### Together We Build a Better Tomorrow
 
-## 🌟 Key Features Implemented
+**A modern, responsive NGO website concept showcasing digital experiences for community impact.**
 
-### 1. Interactive Donation Portal (Demo)
-- **Preset Amount Cards**: Quick selection ($10, $25, $50, $100) or custom gift input in USD.
-- **Cause Category & Frequency Selector**: Flexible options for Education, Nutrition, Healthcare, or Relief with Monthly/One-time toggles.
-- **Dynamic Impact Calculator**: Instant calculation showing tangible community outcomes based on gift size.
-- **Demo Donation Summary Modal**: Generates a printable **Demo Donation Summary — Not a Tax Receipt** with a unique Demo Reference ID.
+<p>
+  <img src="https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-blue?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4" />
+</p>
 
-### 2. Volunteer Registration Portal (Demo)
-- **Validated Application Form**: Captures Name, Email, Phone, Location, Area of Interest, and Availability with real-time error checking.
-- **Interactive Volunteer Pass Preview**: Generates a personalized **Demo Volunteer Pass Preview** upon submission.
-- **Session Transparency**: Explicitly informs users that application data is kept in the client demo session and not transmitted to a backend.
+[Explore the Repository](https://github.com/raihankabir99/-NGO-Landing-Page) · [Report an Issue](https://github.com/raihankabir99/-NGO-Landing-Page/issues)
 
-### 3. Impact Showcase
-- **Illustrative Metric Cards**: Highlighting Children Supported, Educational Centers, Meals Distributed, and Active Volunteers.
-- **Program Pillar Breakdown**: Tabbed interactive view detailing education, nutrition, healthcare, and youth network initiatives.
-
-### 4. Active Campaigns & Drives
-- **Campaign Cards with Progress Indicators**: Fictional campaign drives featuring visual photography, percentage raised, goal targets, and donor counters.
-- **Interactive Filter & Modals**: Filter by category and inspect full campaign scope via modal popups.
-
-### 5. Community Stories & Testimonials
-- **Persona-Based Testimonials**: Fictional stories featuring **James Wilson** (Beneficiary), **Sophia Bennett** (Volunteer), and **Daniel Morgan** (Supporter/Director).
-- **Explicit Demo Labeling**: Clear "Illustrative Demo Testimonial" badges on every story card.
-
-### 6. Contact, Support & FAQ
-- **Demo Contact Interface**: Validated form providing immediate "Demo Message Preview" feedback noting that no email is dispatched.
-- **Expandable FAQ Accordion**: Answers common questions regarding the demo portal, donation calculations, and volunteer pathways.
-- **Demo Contact Details**: Fictional placeholders (`hello@hopebridge.example`, `+1 202-555-0147`, `120 Green Avenue, New York, USA`).
+</div>
 
 ---
 
-## 🎨 Design System
+## ✨ About the Project
 
-- **Color Palette**: Clean White Canvas (`#F8FAFC`), Deep Navy Slate (`#0F172A`), Vibrant Teal (`#0D9488` / `#14B8A6`).
-- **Typography**: `Plus Jakarta Sans` (Display/Headings) and `DM Sans` (Body Copy).
-- **Layout & Accessibility**: 1440px desktop baseline and responsive mobile drawer navigation. Colors are selected with readable contrast in mind; **WCAG AA compliance has not been formally audited or verified**.
+HopeBridge Foundation is a fictional non-profit organization created as a website showcase project. The experience is designed to demonstrate how a non-profit website can present its mission, communicate impact, engage volunteers, and explain ways to support community programs.
 
----
+The project focuses on a clear content structure, interactive frontend components, responsive layouts, and transparent demo interactions.
 
-## 🚀 Tech Stack
+## 🚀 Highlights
 
-- **Framework**: React 19 + TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS v4
-- **Icons**: Lucide React
-- **Animations**: Framer Motion
+| Feature | What it demonstrates |
+| --- | --- |
+| **Donation Experience** | Preset and custom amounts, cause selection, giving frequency, impact calculation, and a demo summary. |
+| **Volunteer Experience** | A volunteer interest form with validation and a personalized demo pass preview. |
+| **Impact Showcase** | Illustrative impact metrics and program information. |
+| **Campaigns** | Campaign cards, progress visuals, category filtering, and detail modals. |
+| **Community Stories** | Testimonial-style cards featuring fictional people and clearly labeled illustrative stories. |
+| **Contact & Support** | Demo contact form feedback and an expandable FAQ section. |
 
----
+## 🎨 Design & Experience
 
-## 🛠 Project Scripts
+- Clean, welcoming visual direction with a white, navy, and teal palette.
+- **Plus Jakarta Sans** for headings and **DM Sans** for body text.
+- Responsive navigation and layouts for desktop, tablet, and mobile screens.
+- Interactive sections, modal experiences, and subtle motion.
+- Readability-focused styling. **Formal WCAG accessibility compliance has not been audited or verified.**
+
+## 🧰 Built With
+
+| Technology | Purpose |
+| --- | --- |
+| [React 19](https://react.dev/) | Component-based user interface |
+| [TypeScript](https://www.typescriptlang.org/) | Typed application code |
+| [Vite](https://vite.dev/) | Development server and production build |
+| [Tailwind CSS v4](https://tailwindcss.com/) | Utility-first styling |
+| [Lucide React](https://lucide.dev/) | Interface icons |
+| [Motion](https://motion.dev/) | UI animation |
+
+## 💻 Run Locally
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (a current supported version)
+- npm
+
+### Installation
 
 ```bash
-# Install dependencies
+# 1. Clone the repository
+git clone https://github.com/raihankabir99/-NGO-Landing-Page.git
+
+# 2. Open the project folder
+cd -NGO-Landing-Page
+
+# 3. Install dependencies
 npm install
 
-# Start development server
+# 4. Start the development server
 npm run dev
-
-# Run TypeScript type check / linting
-npm run lint
-
-# Build production bundle
-npm run build
 ```
+
+Vite will print the local development URL in your terminal (the project is configured to use port **3000**).
+
+### Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run lint` | Run the TypeScript check (`tsc --noEmit`) |
+| `npm run build` | Create the production build |
+| `npm run preview` | Preview the production build locally |
+
+## 📁 Project Structure
+
+```text
+.
+├── src/
+│   ├── assets/       # Project assets
+│   ├── components/   # Reusable UI and page sections
+│   ├── data/         # Demo content and data
+│   ├── App.tsx       # Main application
+│   ├── index.css     # Global styles
+│   ├── main.tsx      # Application entry point
+│   └── types.ts      # TypeScript types
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## ⚠️ Demo Scope & Transparency
+
+This repository is a **fictional frontend showcase**, not an operating charity or production donation platform.
+
+- Organization details, contact information, people, testimonials, campaigns, and impact figures are illustrative.
+- Donation interactions are simulations only. **No real payments are accepted or processed.**
+- Donation summaries are not receipts, tax documents, or proof of payment.
+- Contact and volunteer forms demonstrate frontend behavior only; they do not send messages or applications to a server.
+- No live backend, donor database, or payment gateway is represented by this demo.
+
+Please do not use the fictional details for real donations or correspondence.
+
+## 👨‍💻 Developer
+
+**Crafted by Raihan Kabir**
+
+This project demonstrates frontend development, responsive interface design, and interactive website-building skills.
 
 ---
 
-## 📜 Notice
-This repository is an updated showcase version for **HopeBridge Foundation** ("Together We Build a Better Tomorrow").
+<div align="center">
+
+**HopeBridge Foundation — NGO Website Demo Showcase**
+
+<sub>Fictional concept project · 2026</sub>
+
+</div>
