@@ -14,7 +14,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   showAnnotations = false
 }) => {
   return (
-    <section id="hero" className="relative bg-slate-900 text-white overflow-hidden py-16 lg:py-24">
+    <section id="hero" className="relative bg-slate-900 text-white overflow-hidden py-12 sm:py-16 lg:py-24">
       {/* Background scrim overlay with photography */}
       <div className="absolute inset-0 z-0">
         <img
