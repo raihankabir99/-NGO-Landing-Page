@@ -42,7 +42,7 @@ A modern, responsive React + TypeScript + Vite frontend demonstration created fo
 
 - **Color Palette**: Clean White Canvas (`#F8FAFC`), Deep Navy Slate (`#0F172A`), Vibrant Teal (`#0D9488` / `#14B8A6`).
 - **Typography**: `Plus Jakarta Sans` (Display/Headings) and `DM Sans` (Body Copy).
-- **Layout Math**: 1440px desktop baseline, WCAG AA contrast compliance, responsive mobile drawer navigation.
+- **Layout & Accessibility**: 1440px desktop baseline and responsive mobile drawer navigation. Colors are selected with readable contrast in mind; **WCAG AA compliance has not been formally audited or verified**.
 
 ---
 
