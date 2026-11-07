@@ -102,7 +102,7 @@ export const DonationSection: React.FC<DonationSectionProps> = ({
   };
 
   return (
-    <section id="donation" className="py-20 bg-slate-50 border-b border-slate-200 relative">
+    <section id="donation" className="py-12 sm:py-16 lg:py-20 bg-slate-50 border-b border-slate-200 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {showAnnotations && (
           <div className="mb-6 p-3 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-2">
