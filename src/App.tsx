@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ShowcaseHeader } from './components/ShowcaseHeader';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -13,18 +12,15 @@ import { Footer } from './components/Footer';
 
 import { DonationModal } from './components/DonationModal';
 import { CampaignModal } from './components/CampaignModal';
-import { SummaryModal } from './components/SummaryModal';
 
 import { Campaign, DonationReceiptData } from './types';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<string>('hero');
-  const [showAnnotations, setShowAnnotations] = useState<boolean>(true);
 
   // Modals state
   const [receiptData, setReceiptData] = useState<DonationReceiptData | null>(null);
   const [selectedCampaign, setSelectedCampaign] = useState<Campaign | null>(null);
-  const [isSummaryModalOpen, setIsSummaryModalOpen] = useState<boolean>(false);
 
   // Scroll handler helper
   const scrollToSection = (sectionId: string) => {
@@ -63,15 +59,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 font-sans selection:bg-teal-500 selection:text-white">
-      {/* 1. Evaluator Inspector Header Bar */}
-      <ShowcaseHeader
-        showAnnotations={showAnnotations}
-        setShowAnnotations={setShowAnnotations}
-        activeFeature={activeSection}
-        onNavigateFeature={(featureId) => scrollToSection(featureId)}
-        onOpenSummaryModal={() => setIsSummaryModalOpen(true)}
-      />
-
       {/* 2. NGO Main Responsive Top Navigation */}
       <Navbar
         activeSection={activeSection}
@@ -84,7 +71,7 @@ export default function App() {
         <HeroSection
           onDonateClick={() => scrollToSection('donation')}
           onVolunteerClick={() => scrollToSection('volunteer')}
-          showAnnotations={showAnnotations}
+          showAnnotations={false}
         />
 
         {/* About Us Section */}
@@ -146,10 +133,6 @@ export default function App() {
         onDonate={handleSupportCampaign}
       />
 
-      <SummaryModal
-        isOpen={isSummaryModalOpen}
-        onClose={() => setIsSummaryModalOpen(false)}
-      />
     </div>
   );
 }
