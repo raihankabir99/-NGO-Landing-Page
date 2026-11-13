@@ -1,7 +1,13 @@
 import { Campaign, Testimonial, FAQItem } from '../types';
+import heroImage from '../assets/images/hero_inamigos_humanitarian_1793979036646.jpg';
+import volunteerImage from '../assets/images/campaign_volunteer_team_1793979037862.jpg';
+import educationImage from '../assets/images/campaign_education_child_1793979036946.jpg';
+import foodImage from '../assets/images/campaign_food_distribution_1793979037345.jpg';
+import healthImage from '../assets/images/campaign_community_health_1793979038013.jpg';
+import futureImage from '../assets/images/campaign_children_future_1793979038156.jpg';
 
-export const HERO_IMAGE = '/assets/images/hero_inamigos_humanitarian_1793979036646.jpg';
-export const VOLUNTEER_IMAGE = '/assets/images/campaign_volunteer_team_1793979037862.jpg';
+export const HERO_IMAGE = heroImage;
+export const VOLUNTEER_IMAGE = volunteerImage;
 
 export const ORG_INFO = {
   name: 'HopeBridge Foundation',
@@ -23,7 +29,7 @@ export const CAMPAIGNS: Campaign[] = [
     fullDescription: 'Education is the most powerful tool for breaking cycles of poverty. This initiative funds comprehensive learning packages including STEM workbooks, school bags, digital learning access, and after-school remedial classes led by qualified mentors across 24 communities.',
     targetAmount: 50000,
     raisedAmount: 38500,
-    image: '/assets/images/campaign_education_child_1793979036946.jpg',
+    image: educationImage,
     donorsCount: 420,
     urgent: true
   },
@@ -35,7 +41,7 @@ export const CAMPAIGNS: Campaign[] = [
     fullDescription: 'No child should go to bed hungry. The Food for Everyone program runs community kitchens and mobile distribution vans supplying balanced meals and monthly dry ration kits to low-income settlements and senior citizens.',
     targetAmount: 30000,
     raisedAmount: 24000,
-    image: '/assets/images/campaign_food_distribution_1793979037345.jpg',
+    image: foodImage,
     donorsCount: 315
   },
   {
@@ -46,7 +52,7 @@ export const CAMPAIGNS: Campaign[] = [
     fullDescription: 'Bringing medical professionals and diagnostics directly to underserved neighborhoods. Our health camps offer pediatric care, vision screening, dental checkups, maternal health guidance, and free essential wellness supplies.',
     targetAmount: 40000,
     raisedAmount: 19500,
-    image: '/assets/images/campaign_community_health_1793979038013.jpg',
+    image: healthImage,
     donorsCount: 188
   },
   {
@@ -57,7 +63,7 @@ export const CAMPAIGNS: Campaign[] = [
     fullDescription: 'Preparing youth for the modern digital economy. We establish computer literacy labs in community centers, offering practical courses in basic coding, digital tools, communication skills, and career counseling.',
     targetAmount: 60000,
     raisedAmount: 51000,
-    image: '/assets/images/campaign_children_future_1793979038156.jpg',
+    image: futureImage,
     donorsCount: 540,
     urgent: true
   }
